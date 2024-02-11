@@ -87,5 +87,6 @@ const styles = StyleSheet.create({
 
 //hi i 'm dumindu
 
+
 export default SignupScreen;
 
