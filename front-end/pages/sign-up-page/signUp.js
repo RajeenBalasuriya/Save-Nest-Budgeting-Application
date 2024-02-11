@@ -2,6 +2,7 @@
 import { View, Text, TextInput, Button, StyleSheet,Image,TouchableOpacity} from 'react-native';
 import React, { useState } from 'react';
 const logoImg = require('./images/image2.jpg')
+// const Google_G_logoImg = require('./icons/Google_G_logo.svg.png')
 
 // Define the SignUp functional component.
 const SignupScreen = () => {
@@ -46,6 +47,7 @@ const SignupScreen = () => {
       <Button title="               Sign Up               " onPress={handleSignup} />
       <Spacer size={100} />
       <Text style={{textAlign:'center', color:'black'}}>Or Sign up with...</Text>
+      {/* <Image source={Google_G_logoImg}/> */}
 
     </View>
   );
@@ -60,7 +62,6 @@ const styles = StyleSheet.create({
 
   },
   
-
   title: {
     fontSize: 24,
     marginBottom: 16,
@@ -83,6 +84,8 @@ const styles = StyleSheet.create({
 
   },
 });
+
+//hi i 'm dumindu
 
 export default SignupScreen;
 
