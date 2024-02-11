@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
     paddingLeft: 8,
   },
 
+
   button: {
     width: 80, // Set the desired width for all buttons
     backgroundColor: '#3498db',
@@ -86,7 +87,8 @@ const styles = StyleSheet.create({
 });
 
 //hi i 'm dumindu
-//hi
+//This is a comment
+
 
 
 export default SignupScreen;
