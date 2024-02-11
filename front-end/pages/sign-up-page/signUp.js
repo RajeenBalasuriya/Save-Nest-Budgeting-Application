@@ -17,7 +17,6 @@ const SignupScreen = () => {
     // You can add API call or authentication logic here
   };
 
-  
   // render the UI for SignUp Screen
   const Spacer = ({ size }) => <View style={{ width: 100, height: 20 }} />;
 
