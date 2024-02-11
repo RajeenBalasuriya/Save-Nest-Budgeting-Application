@@ -27,7 +27,7 @@ const SignupScreen = () => {
       <Image source={logoImg} style={{width:370 ,height:250,borderRadius:30}}/>
       {/* Display a welcome message. */}
       <Spacer size={100} />
-      <Text style={styles.title}>Welcome to the SaveNest</Text>
+      <Text style={styles.title}>Let's Sign Up!!!!</Text>
       <Spacer size={100} />
       {/* Text Input for entering email */}
       <TextInput
@@ -46,7 +46,7 @@ const SignupScreen = () => {
       <Spacer size={100} />
       {/* <Button title="               Sign Up               " onPress={handleSignup} /> */}
       <Spacer size={100} />
-      <Button title=" Sign in with Google " onPress={handleSignup} />
+      <Button title=" Sign in with Google   " onPress={handleSignup} />
       <Spacer size={100} />
       <Button title="Sign in with Facebook" onPress={handleSignup} />
     </View>
@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     marginBottom: 16,
+    
   },
 
   input: {
