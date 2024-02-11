@@ -1,9 +1,7 @@
 // Import necessary modules from the 'react' and 'react-native' libraries
-import { View, Text, TextInput, Button, StyleSheet,Image} from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet,Image,TouchableOpacity} from 'react-native';
 import React, { useState } from 'react';
 const logoImg = require('./images/image2.jpg')
-
-
 
 // Define the SignUp functional component.
 const SignupScreen = () => {
@@ -19,23 +17,25 @@ const SignupScreen = () => {
     // You can add API call or authentication logic here
   };
 
+  
   // render the UI for SignUp Screen
   const Spacer = ({ size }) => <View style={{ width: 100, height: 20 }} />;
 
   return (
     <View style={styles.container}>
-      <Image source={logoImg} style={{width:370 ,height:250,borderRadius:30}}/>
+      <Image source={logoImg} style={{width:390 ,height:250,borderRadius:30,padding:10}}/>
       {/* Display a welcome message. */}
       <Spacer size={100} />
       <Text style={styles.title}>Let's Sign Up!!!!</Text>
-      <Spacer size={100} />
+      <Spacer size={90} />
       {/* Text Input for entering email */}
       <TextInput
         style={styles.input}
         placeholder="Email"
         onChangeText={(text) => setEmail(text)}
       />
-      <Spacer size={100} />
+      <Spacer size={90} />
+
       {/* TextInput for entering Password */}
       <TextInput
         style={styles.input}
@@ -43,12 +43,11 @@ const SignupScreen = () => {
         secureTextEntry
         onChangeText={(text) => setPassword(text)}
       />
+      {/* <Spacer size={100} /> */}
+      <Button title="               Sign Up               " onPress={handleSignup} />
       <Spacer size={100} />
-      {/* <Button title="               Sign Up               " onPress={handleSignup} /> */}
-      <Spacer size={100} />
-      <Button title=" Sign in with Google   " onPress={handleSignup} />
-      <Spacer size={100} />
-      <Button title="Sign in with Facebook" onPress={handleSignup} />
+      <Text style={{textAlign:'center', color:'black'}}>Or Sign up with...</Text>
+
     </View>
   );
 };
@@ -60,7 +59,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'column',
 
-    
   },
   
 
